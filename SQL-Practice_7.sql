@@ -1,7 +1,8 @@
 -- 1.film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.
-SELECT rating
+SELECT rating, COUNT(*)
 FROM film
-GROUP BY rating;
+GROUP BY rating
+ORDER BY COUNT(*);
 
 -- 2.film tablosunda bulunan filmleri replacement_cost sütununa göre grupladığımızda film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız.
 SELECT replacement_cost, COUNT(*)
